@@ -1,0 +1,174 @@
+.home-section {
+  background-color: #ebf1f2;
+  color: #212529;
+}
+
+/* Highlighted Name */
+.home-section h1 span {
+  color: #0d6efd;
+}
+
+.home-section h4 {
+  color: #6c757d;
+}
+
+.home-section p {
+  color: #495057;
+}
+
+/* Buttons */
+.home-section .btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: #fff;
+}
+
+.home-section .btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+.home-section .btn-outline-primary {
+  color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.home-section .btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+/* Optional: make it even closer to the right edge */
+
+/* ===========================================
+   SCROLL ANIMATIONS (Responsive + Smooth)
+   =========================================== */
+
+/* Text Fade-Up Animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Slow Motion Fade + Slide From Right (Image) */
+.fade-right {
+  opacity: 0;
+  transform: translateX(120px);
+  transition: all 2.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.fade-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ===========================================
+   Logo Styling
+   =========================================== */
+.logo-image {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
+  transition: transform 0.4s ease;
+}
+
+.logo-image:hover {
+  transform: scale(1.08);
+}
+
+/* ================================
+   RESPONSIVE FIXES FOR SMALL DEVICES
+================================ */
+
+/* Tablets (max-width: 992px) */
+@media (max-width: 992px) {
+  .home-section h1 {
+    font-size: 2rem !important;
+  }
+
+  .home-section h4 {
+    font-size: 1.3rem !important;
+  }
+
+  .home-section p {
+    font-size: 1rem !important;
+  }
+
+  .logo-image {
+    max-width: 210px;
+  }
+
+  /* Slightly reduce animation distance */
+  .fade-right {
+    transform: translateX(80px);
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .home-section {
+    text-align: center;
+    padding: 40px 15px;
+  }
+
+  .home-section h1 {
+    font-size: 1.8rem !important;
+  }
+
+  .home-section h4 {
+    font-size: 1.2rem !important;
+  }
+
+  .home-section p {
+    font-size: 1rem !important;
+    padding: 0 10px;
+  }
+
+  /* Image centered on mobile */
+  .logo-image {
+    max-width: 180px;
+    margin: 25px auto 0;
+  }
+
+  /* Reduce slide animation distance for mobile */
+  .fade-right {
+    transform: translateX(60px);
+  }
+}
+
+/* Extra Small (max-width: 480px) */
+@media (max-width: 480px) {
+  .home-section {
+    padding: 30px 10px;
+  }
+
+  .home-section h1 {
+    font-size: 1.6rem !important;
+  }
+
+  .home-section h4 {
+    font-size: 1.1rem !important;
+  }
+
+  .home-section p {
+    font-size: 0.95rem !important;
+    line-height: 1.6;
+  }
+
+  .logo-image {
+    max-width: 150px;
+  }
+
+  /* Very small animation distance */
+  .fade-right {
+    transform: translateX(40px);
+  }
+}
+

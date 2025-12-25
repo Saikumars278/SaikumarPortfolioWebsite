@@ -1,0 +1,50 @@
+.home-section {
+  background-color: #ebf1f2;
+  color: #212529;
+}
+
+/* Highlighted Name */
+.home-section h1 span {
+  color: #0d6efd;
+}
+
+.home-section h4 {
+  color: #6c757d;
+}
+
+.home-section p {
+  color: #495057;
+}
+
+/* Buttons */
+.home-section .btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: #fff;
+}
+
+.home-section .btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+.home-section .btn-outline-primary {
+  color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.home-section .btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+/* Logo Styling */
+.logo-image {
+  max-width: 250px;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+  transform: scale(1.05);
+}

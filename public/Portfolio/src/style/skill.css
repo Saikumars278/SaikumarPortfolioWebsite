@@ -1,0 +1,71 @@
+/* Skill Section Background */
+.skills-section {
+  background-color: #eaf6f6; /* Soft background */
+}
+
+/* Category Box */
+.category {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  height: 100%;
+  transition: box-shadow 0.3s ease;
+}
+
+.category:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading Style */
+.category h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Section Icons */
+.section-icon {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+/* List Style */
+.category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 10px 0;
+  padding: 0 10px;
+  font-weight: 500;
+  color: #555;
+}
+
+.category ul li img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Section Title Underline */
+.section-titlee::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #1e90ff;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}

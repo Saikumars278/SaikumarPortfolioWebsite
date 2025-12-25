@@ -1,0 +1,53 @@
+.tech-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  margin: 4px 4px 0 0;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background-color: #f6f4f4;
+  color: #000;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Technology-specific badge colors */
+.tech-badge.react {
+  background-color: #61dafb;
+  color: #000;
+}
+
+.tech-badge.django {
+  background-color: #092e20;
+  color: #fff;
+}
+
+.tech-badge.rest-api {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.tech-badge.mysql {
+  background-color: #00758f;
+  color: #fff;
+}
+
+.tech-badge.axios {
+  background-color: #5a29e4;
+  color: #fff;
+}
+
+.tech-badge.html {
+  background-color: #f16529;
+  color: #fff;
+}
+
+.tech-badge.css {
+  background-color: #2965f1;
+  color: #fff;
+}
+
+.tech-badge.javascript {
+  background-color: #f7df1e;
+  color: #000;
+}

@@ -1,0 +1,131 @@
+/* ==========================================
+   SECTION BASE
+========================================== */
+.education-section {
+  background-color: #f4f9ff; /* Light background */
+  padding: 60px 20px;
+}
+
+/* Title */
+.section-titlee {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+}
+
+.section-titlee::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #1e90ff;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* Subtitle inside cards */
+.section-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #007bff;
+}
+
+/* ==========================================
+   CARD DESIGN
+========================================== */
+.card-custom {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* ==========================================
+   ICON CIRCLE
+========================================== */
+.icon-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.bg-blue {
+  background-color: #0d6efd !important;
+}
+
+.bg-cyan {
+  background-color: #17a2b8 !important;
+}
+
+.completed-text {
+  font-size: 0.9rem;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .section-titlee {
+    font-size: 1.9rem;
+  }
+
+  .card-custom {
+    padding: 18px;
+  }
+
+  .icon-circle {
+    width: 42px;
+    height: 42px;
+    font-size: 17px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .section-titlee {
+    font-size: 1.7rem;
+  }
+
+  .section-title {
+    font-size: 1.1rem;
+  }
+
+  .icon-circle {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+/* Very Small Screens */
+@media (max-width: 480px) {
+  .section-titlee {
+    font-size: 1.5rem;
+  }
+
+  .card-custom {
+    padding: 16px;
+  }
+
+  .icon-circle {
+    width: 38px;
+    height: 38px;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,143 @@
+/* Skill Section Background */
+.skills-section {
+  background-color: #eaf6f6; /* Soft background */
+}
+
+/* Category Box */
+.category {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  height: 100%;
+  transition: box-shadow 0.3s ease;
+}
+
+
+.category:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading Style */
+.category h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Section Icons */
+.section-icon {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+/* List Style */
+.category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 10px 0;
+  padding: 0 10px;
+  font-weight: 500;
+  color: #555;
+}
+
+.category ul li img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Section Title Underline */
+.section-titlee::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #1e90ff;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* ======================================
+   RESPONSIVE FIXES FOR SMALL DEVICES
+====================================== */
+
+/* Tablet (max-width: 992px) */
+@media (max-width: 992px) {
+  .category {
+    margin-bottom: 25px;
+  }
+
+  .section-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .category ul li img {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Make each column full width */
+  .skills-section .col-md-3 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .category {
+    padding: 18px;
+  }
+
+  .category h3 {
+    font-size: 1.3rem;
+  }
+
+  .category ul li {
+    font-size: 1rem;
+  }
+}
+
+/* Extra Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .skills-section {
+    padding: 20px;
+  }
+
+  .category {
+    padding: 15px;
+  }
+
+  .category h3 {
+    font-size: 1.2rem;
+  }
+
+  .category ul li {
+    font-size: 0.95rem;
+  }
+
+  .section-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .category ul li img {
+    width: 20px;
+    height: 20px;
+  }
+}

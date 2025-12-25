@@ -1,0 +1,145 @@
+/* ============================
+   TECHNOLOGY BADGES (CLEANED)
+============================= */
+
+.tech-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 4px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  user-select: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect */
+.tech-badge:hover {
+  transform: scale(1.08);
+}
+
+/* Badge Colors */
+.tech-badge.react {
+  background-color: #61dafb;
+  color: #000;
+}
+
+.tech-badge.django {
+  background-color: #092e20;
+  color: #fff;
+}
+
+.tech-badge.rest-api {
+  background-color: #f39c12;
+  color: #fff;
+}
+
+.tech-badge.mysql {
+  background-color: #00758f;
+  color: #fff;
+}
+
+.tech-badge.axios {
+  background-color: #5a29e4;
+  color: #fff;
+}
+
+.tech-badge.css {
+  background-color: #2965f1;
+  color: #fff;
+}
+
+.tech-badge.bootstrap {
+  background-color: #6f42c1;
+  color: #fff;
+}
+
+.tech-badge.emailjs {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+.tech-badge.javascript {
+  background-color: #f7df1e;
+  color: #000;
+}
+
+.tech-badge.html {
+  background-color: #f16529;
+  color: #fff;
+}
+
+/* ============================
+   FADE-UP ANIMATION
+============================= */
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1.1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive fade distance */
+@media (max-width: 768px) {
+  .fade-up {
+    transform: translateY(30px);
+  }
+}
+
+@media (max-width: 480px) {
+  .fade-up {
+    transform: translateY(20px);
+  }
+}
+
+/* ============================
+   RESPONSIVE CARD IMPROVEMENTS
+============================= */
+
+/* For tablets */
+@media (max-width: 992px) {
+  .card-body h5 {
+    font-size: 1.2rem;
+  }
+
+  .card-body p,
+  .card-body ul {
+    font-size: 0.95rem;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .tech-badge {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+
+  .card {
+    margin-bottom: 15px;
+  }
+}
+
+/* For extra-small screens */
+@media (max-width: 480px) {
+  .tech-badge {
+    font-size: 0.75rem;
+  }
+
+  .card-body h5 {
+    font-size: 1.1rem;
+  }
+
+  .card-body ul li {
+    font-size: 0.9rem;
+  }
+
+  .card-body p {
+    font-size: 0.9rem;
+  }
+}

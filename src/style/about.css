@@ -1,0 +1,232 @@
+.about-section {
+  padding: 60px 20px;
+  background: #e7f2e7;
+}
+
+/* ================================
+   FADE-UP ANIMATION
+================================= */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1.1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mobile fade adjustment */
+@media (max-width: 768px) {
+  .fade-up {
+    transform: translateY(30px);
+  }
+}
+@media (max-width: 480px) {
+  .fade-up {
+    transform: translateY(20px);
+  }
+}
+
+/* ================================
+   TITLE
+================================= */
+.section-titlee {
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.section-titlee::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #1e90ff;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* ================================
+   MAIN LAYOUT
+================================= */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* LEFT SIDE */
+.about-summary {
+  flex: 1;
+  min-width: 300px;
+}
+
+.summary-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.about-summary p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.about-location-exp {
+  display: flex;
+  gap: 60px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* RIGHT SIDE */
+.about-stats {
+  flex: 1;
+  min-width: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.stats-card {
+  width: 100%;
+  background-color: #d5e1eb;
+  padding: 25px 30px;
+  border-radius: 12px;
+  border: 1px solid #dbe5ef;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.stats-card:hover {
+  transform: translateY(-4px);
+}
+
+.stats-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #1e90ff;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.stats-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stats-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  font-size: 1.05rem;
+  border-bottom: 1px dashed #ccc;
+}
+
+.stats-list li:last-child {
+  border-bottom: none;
+}
+
+.highlight {
+  color: #1e90ff;
+  font-weight: 700;
+}
+
+/* ================================
+   RESPONSIVE FIXES
+================================= */
+
+/* TABLET (≤992px) */
+@media (max-width: 992px) {
+  .section-titlee {
+    font-size: 2.2rem;
+  }
+
+  .summary-title {
+    font-size: 1.6rem;
+  }
+
+  .about-summary p {
+    font-size: 1rem;
+  }
+
+  .stats-card {
+    padding: 22px;
+  }
+}
+
+/* MOBILE (≤768px) */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 40px 15px;
+  }
+
+  /* Stack sections vertically */
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-titlee {
+    font-size: 2rem;
+  }
+
+  .summary-title {
+    font-size: 1.4rem;
+  }
+
+  .about-summary p {
+    font-size: 1rem;
+  }
+
+  .about-location-exp {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .stats-card {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+/* SMALL MOBILE (≤480px) */
+@media (max-width: 480px) {
+  .about-section {
+    padding: 30px 12px;
+  }
+
+  .section-titlee {
+    font-size: 1.7rem;
+  }
+
+  .summary-title {
+    font-size: 1.25rem;
+  }
+
+  .about-summary p {
+    font-size: 0.95rem;
+  }
+
+  .stats-card {
+    padding: 18px 15px;
+  }
+
+  .stats-list li {
+    font-size: 0.95rem;
+  }
+
+  .highlight {
+    font-size: 1rem;
+  }
+}

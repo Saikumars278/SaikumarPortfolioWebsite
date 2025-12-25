@@ -1,0 +1,214 @@
+/* Footer container */
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 30px 20px 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+
+/* Footer title */
+.footer h2 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+/* Footer subtitle */
+.footer p {
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+}
+
+/* Follow text */
+.follow-text {
+  font-size: 1rem;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #ffffffb3;
+}
+
+/* Footer icons */
+.footer-icons {
+  margin-bottom: 20px;
+}
+
+.footer-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-icons img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(90%);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-icons a:hover img {
+  transform: scale(1.2);
+  filter: brightness(130%);
+}
+
+/* Footer bottom copyright text */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 15px;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* Scroll-to-top button */
+.scroll-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 45px;
+  height: 45px;
+  background-color: #3498db;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 9999;
+}
+
+.scroll-top:hover {
+  background-color: #217dbb;
+}
+
+.scroll-top img {
+  width: 20px;
+  height: 20px;
+  filter: invert(100%);
+  pointer-events: none;
+  user-select: none;
+}
+/* Modal overlay */
+.custom-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: background 0.3s ease, opacity 0.3s ease;
+  z-index: 1100;
+}
+
+.custom-modal-overlay.show {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Modal content container */
+.custom-modal-content {
+  background: #2c3e50;
+  color: white;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+  transform: translateY(-30px);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  padding: 1rem 1.5rem;
+  user-select: none;
+}
+
+.custom-modal-content.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Modal header */
+.custom-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #3b5164;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.custom-modal-header h5 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+/* Close button */
+.custom-modal-close {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.custom-modal-close:hover,
+.custom-modal-close:focus {
+  color: #25d366; /* WhatsApp green accent */
+  outline: none;
+}
+
+/* Modal body */
+.custom-modal-body {
+  font-size: 1rem;
+  line-height: 1.4;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Optional: Adjust footer colors for better contrast */
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 30px 20px 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+
+/* WhatsApp floating button styling (from before) */
+.whatsapp-float {
+  position: fixed;
+  bottom: 80px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  background-color: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1050;
+  border: none;
+  padding: 0;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe57;
+}
+
+.whatsapp-float img {
+  width: 28px;
+  height: 28px;
+  user-select: none;
+  pointer-events: none;
+}
+
